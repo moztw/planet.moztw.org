@@ -1,0 +1,51 @@
+body.sectionPlanet li#menu_planet a {
+  background-position: 0 -200px;
+  color: #003399;
+}
+body.sectionPlanet li#menu_planet {
+  background-position: 100% -200px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.daygroup h2 {
+  font-size: 200%;
+  border: none;
+  -moz-border-radius: 6px;
+  padding: 5px 10px;
+  background: #E4ECEC;
+  color: #4C5C5C;
+}
+.channelgroup {
+  border: 1px solid #E4ECEC;
+  -moz-border-radius: 6px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+.channelgroup h3 {
+  border: none;
+}
+.channelgroup h4 {
+  background: #E4ECEC;
+  color: #4C5C5C;  
+  display: block;
+  margin: 10px -10px;
+  padding: 5px 10px;
+  border: none;
+}
+.entry h1, .entry h2, .entry h3, .entry h4 {
+  background: none;
+  -moz-border-radius: 6px;
+  padding: 5px 10px;
+  border: 1px solid #EEE;
+  background:  #EEE;
+  font-size: 200%;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.entry h2, .entry h4 {
+  border: 1px solid #EEE;
+  background:  #FFF;
+}
+.entry h3, .entry h4 {
+  font-size: 100%;
+}

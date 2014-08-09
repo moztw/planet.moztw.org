@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom'>
+  <title>venus</title>
+  <id>tag:intertwingly.net,2006-08-16:code/venus</id>
+  <link href='http://intertwingly.net/code/venus/'/>
+  <link rel='self' type='application/atom+xml' href='/code/venus/index.atom'/>
+  <updated>2008-05-22T01:53:36Z</updated>
+
+  <entry>
+    <author>
+      <name>Sam Ruby</name>
+    </author>
+    <title>Revision 95: Remove meme spam</title>
+    <link href='http://intertwingly.net/code/venus/#95'/>
+    <id>tag:rubys@intertwingly.net,2008-05-22:01:53:36-gxcabbaetmxi01xx</id>
+    <updated>2008-05-22T01:53:36Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Modified:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/filters/mememe.plugin'>filters/mememe.plugin</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+
+  <entry>
+    <author>
+      <name>Sam Ruby</name>
+    </author>
+    <title>Revision 94: Fix for debian systems</title>
+    <link href='http://intertwingly.net/code/venus/#94'/>
+    <id>tag:rubys@intertwingly.net,2008-04-30:16:51:41-szn6eidi44jmcri6</id>
+    <updated>2008-04-30T16:51:41Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Modified:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/planet/shell/xslt.py'>planet/shell/xslt.py</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+
+  <entry>
+    <author>
+      <name>Sam Ruby</name>
+    </author>
+    <title>Revision 93: Align definition list terms</title>
+    <link href='http://intertwingly.net/code/venus/#93'/>
+    <id>tag:rubys@intertwingly.net,2008-04-30:16:50:39-af51h358acea3yej</id>
+    <updated>2008-04-30T16:50:39Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Modified:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/docs/docs.css'>docs/docs.css</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+
+  <entry>
+    <author>
+      <name>Mary Gardiner</name>
+    </author>
+    <title>Revision 92: URL encoding</title>
+    <link href='http://intertwingly.net/code/venus/#92'/>
+    <id>tag:mary@puzzling.org,2008-04-20:12:51:43-j9fp2fqp9ixdlbdw</id>
+    <updated>2008-04-20T12:51:43Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Modified:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/examples/filters/xpath-sifter/xpath-sifter.ini'>examples/filters/xpath-sifter/xpath-sifter.ini</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+
+  <entry>
+    <author>
+      <name>Mary Gardiner</name>
+    </author>
+    <title>Revision 91: Clearly delineate feeds</title>
+    <link href='http://intertwingly.net/code/venus/#91'/>
+    <id>tag:mary@puzzling.org,2008-04-20:12:49:17-d9w3x3zbj6e0xusb</id>
+    <updated>2008-04-20T12:49:17Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Modified:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/examples/filters/xpath-sifter/xpath-sifter.ini'>examples/filters/xpath-sifter/xpath-sifter.ini</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+
+  <entry>
+    <author>
+      <name>Mary Gardiner</name>
+    </author>
+    <title>Revision 90: Apply URL quoting</title>
+    <link href='http://intertwingly.net/code/venus/#90'/>
+    <id>tag:mary@puzzling.org,2008-04-20:12:47:57-6tx0h4y19ljv1w0b</id>
+    <updated>2008-04-20T12:47:57Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Modified:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/examples/filters/xpath-sifter/xpath-sifter.ini'>examples/filters/xpath-sifter/xpath-sifter.ini</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+
+  <entry>
+    <author>
+      <name>Mary Gardiner</name>
+    </author>
+    <title>Revision 89: A bit more documentation</title>
+    <link href='http://intertwingly.net/code/venus/#89'/>
+    <id>tag:mary@puzzling.org,2008-04-20:12:28:28-btyk5wsue1xqwl8c</id>
+    <updated>2008-04-20T12:28:28Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Modified:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/examples/filters/xpath-sifter/xpath-sifter.ini'>examples/filters/xpath-sifter/xpath-sifter.ini</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+
+  <entry>
+    <author>
+      <name>Mary Gardiner</name>
+    </author>
+    <title>Revision 88: Another attempt at correct xpath examples</title>
+    <link href='http://intertwingly.net/code/venus/#88'/>
+    <id>tag:mary@puzzling.org,2008-04-20:12:27:09-pg1klz3gl0lypsyu</id>
+    <updated>2008-04-20T12:27:09Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Modified:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/examples/filters/xpath-sifter/xpath-sifter.ini'>examples/filters/xpath-sifter/xpath-sifter.ini</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+
+  <entry>
+    <author>
+      <name>Mary Gardiner</name>
+    </author>
+    <title>Revision 87: Slightly more verbose and commented xpath-sifter filter examples</title>
+    <link href='http://intertwingly.net/code/venus/#87'/>
+    <id>tag:mary@puzzling.org,2008-04-16:02:48:13-g9706g9yc3xdpkel</id>
+    <updated>2008-04-16T02:48:13Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Added:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/examples/filters/xpath-sifter/'>examples/filters/xpath-sifter/</a></li>
+        <li><a href='http://intertwingly.net/code/venus/examples/filters/xpath-sifter/xpath-sifter.ini'>examples/filters/xpath-sifter/xpath-sifter.ini</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+
+  <entry>
+    <author>
+      <name>Sam Ruby</name>
+    </author>
+    <title>Revision 86: Add fill-opacity</title>
+    <link href='http://intertwingly.net/code/venus/#86'/>
+    <id>tag:rubys@intertwingly.net,2008-02-18:15:59:21-50qsj67v8htpk59g</id>
+    <updated>2008-02-18T15:59:21Z</updated>
+    <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+    <dl>
+      <dt>Modified:</dt><dd><ul>
+        <li><a href='http://intertwingly.net/code/venus/planet/vendor/feedparser.py'>planet/vendor/feedparser.py</a></li>
+      </ul></dd>
+    </dl>
+    </div></content>
+  </entry>
+</feed>

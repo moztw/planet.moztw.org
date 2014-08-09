@@ -1,0 +1,132 @@
+# Planet configuration file based on the 'fancy' Planet 2.0 example.
+#
+# This illustrates some of Planet's fancier features with example.
+
+# Every planet needs a [Planet] section
+[Planet]
+# name: Your planet's name
+# link: Link to the main page
+# owner_name: Your name
+# owner_email: Your e-mail address
+name = 摩茲工寮 :: Planet MozTW
+link = http://planet.moztw.org/
+owner_name = Wilson Lee 
+owner_email = kourge@gmail.com 
+
+# cache_directory: Where cached feeds are stored
+# log_level: One of DEBUG, INFO, WARNING, ERROR or CRITICAL
+# feed_timeout: number of seconds to wait for any given feed
+cache_directory = /home/moztw/planet/cache
+log_level = DEBUG
+feed_timeout = 40
+
+# output_theme: "theme" of the output
+# output_dir: Directory to place output files
+# items_per_page: How many items to put on each page
+output_theme = cavendish
+output_dir = /home/moztw/planet/www
+items_per_page = 10
+
+# additional files to copy (note the wildcards!)
+bill_of_materials:
+  images/#{face} 
+
+# Options placed in the [DEFAULT] section provide defaults for the feed
+# sections.  Placing a default here means you only need to override the
+# special cases later.
+[DEFAULT]
+# Hackergotchi default size.
+# If we want to put a face alongside a feed, and it's this size, we
+# can omit these variables.
+facewidth = 65
+faceheight = 85
+
+
+# Any other section defines a feed to subscribe to.  The section title
+# (in the []s) is the URI of the feed itself.  A section can also be
+# have any of the following options:
+# 
+# name: Name of the feed (defaults to the title found in the feed)
+#
+# Additionally any other option placed here will be available in
+# the template (prefixed with channel_ for the Items loop).  We use
+# this trick to make the faces work -- this isn't something Planet
+# "natively" knows about.  Look at fancy-examples/index.html.tmpl
+# for the flip-side of this.
+
+[http://www.blogger.com/feeds/5918579739413557982/posts/full/-/MozTW]
+name = BobChao
+description = 社群、行銷與推廣合作
+blogname = 柏強的城市探險記
+icon = default
+truelink = http://blog.bobchao.net
+
+[http://blog.timc.idv.tw/categories/moztw/feed/]
+name = timdream
+description = 在地化專案、Web 科技
+blogname = Blog: timdream
+icon = default
+truelink = http://blog.timc.idv.tw
+
+[http://feedproxy.google.com/alicekey_moztw]
+name = alicekey
+description = Mozilla 新聞、觀點
+blogname = 愛麗絲之鑰
+icon = default
+truelink = http://alicekey.wordpress.com
+
+[http://feeds.feedburner.com/othree4moztw]
+name = Othree
+description = Web 科技
+blogname = O3noBLOG
+icon = default
+truelink = http://blog.othree.net
+
+[http://abev66.blogspot.com/feeds/posts/full/-/Mozilla]
+name = lRabbit
+description = 在地化專案 (Thunderbird)
+blogname = Breezy Dream
+icon = default
+truelink = http://abev66.blogspot.com
+
+# [http://blog.littleb.tc/feeds/posts/full/-/MozTW]
+# name = sst.dreams
+# description = 不專業技術評論、在地化與雜七雜八
+# blogname = 小鎮遊跡
+# icon = default
+# truelink = http://blog.littleb.tc
+
+[http://blog.toomore.net/feeds/posts/full/-/moztw]
+name = Toomore
+description = 南區社群、活動
+blogname = Toomore Blog
+icon = default
+truelink = http://blog.toomore.net/
+
+[http://feeds.feedburner.com/BilogII-firefox]
+name = Irvin
+description = Firefox
+blogname = Bilog II
+icon = default
+truelink = http://irvin.sto.tw
+
+[http://blog.kidwm.net/tag/firefox/feed]
+name = WM
+description = Web 科技
+blogname = WMの物語
+icon = default
+truelink = http://blog.kidwm.net/
+
+[http://talk.ernestchiang.com/feeds/posts/default/-/moztw]
+name = Ernest
+description = SUMO 說明文件專案
+blogname = Ernest Talks
+icon = default
+truelink = http://talk.ernestchiang.com/
+
+[http://mozlinks-zh.blogspot.com/feeds/posts/default?alt=rss]
+name = MozLinks-zh
+description = Mozilla Links 正體中文版
+blogname = Mozilla Links 正體中文版
+icon = default
+truelink = http://mozlinks-zh.blogspot.com//
