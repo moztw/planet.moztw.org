@@ -304,7 +304,7 @@ div.vcard a {font-weight: normal;}
 /* 摩茲工寮 */
 
 #planet-moztw-org .key-point {
-	background: #E4ECEC url(http://planet.moztw.org/feature.png) no-repeat scroll right bottom;
+	background: #E4ECEC url(images/feature.png) no-repeat scroll right bottom;
 }
 
 #planet-moztw-org #feature-content {
@@ -315,6 +315,6 @@ div.vcard a {font-weight: normal;}
 #planet-moztw-org #feature-content h2 {
 	height: 0; width: 150px;
 	padding-top: 30px;
-	background: url(http://planet.moztw.org/title.png) no-repeat scroll top left;
+	background: url(images/title.png) no-repeat scroll top left;
 	overflow: hidden;
 }
