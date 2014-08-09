@@ -102,7 +102,7 @@
 	h4 { font-size: 100%; }
 	h5 { font-size: 90%; }
 	h6 { font-size: 90%; border: 0; }
-	
+
 /* Navigation */
 
         :link { color: #039; }
@@ -122,11 +122,11 @@
 		color: #666;
 		font-style: normal;
 	}
-	
+
 	.remark {
 		color: #666;
 	}
-	
+
 	.sidenote {
 		border-color: #666;
 	}
@@ -157,13 +157,13 @@
 		height: 8px;
 		background: transparent url("http://moztw.org/images/key-point_br.gif") scroll no-repeat bottom right ;
 	}
-	
+
 	.key-point h2, .key-point h3, .key-point h4, .key-point h5 {
 		border: none;
 		margin-top: 0;
 		color: #4C5C5C;
 	}
-	
+
 	div.important,
 	p.important {
 		margin: 1em 0;
@@ -173,7 +173,7 @@
 		color: black;
 		font-size: 1.1em;
 	}
-	
+
 	.news dt {
 		font-weight: normal;
 		color: #666;
@@ -181,7 +181,7 @@
 	.news dt a {
 		font-weight: bold;
 	}
-	
+
 	ul.compact {
 		margin-left: 0;
 		padding-left: 20px;
@@ -208,7 +208,7 @@
 		padding: 1em; 
 		background: #EEECF6;
 	}
-	
+
 	code > em,
 	code > strong,
 	pre.code > em,
@@ -248,7 +248,7 @@ ol.faq li a:hover {
 	table.data td {
 		border: 1px solid #ccc;
 	}
-	
+
 	tr.odd {
 		background: #F5F5F5;
 	}
@@ -260,7 +260,7 @@ ol.faq li a:hover {
 	}
 
 /* Product Specific CSS */
-	
+
 	.productlist h3 {
 		border: none;
 	}
@@ -268,37 +268,37 @@ ol.faq li a:hover {
 	.key-point h1, .key-point h3 {
 		margin: 0;
 	}
-	
+
 	#product-desc h2 {
 		text-indent: -700em;
 		height: 25px;
 		line-height: 2px;
 		font-size: 2px;
 	}
-	
+
 	#product-desc p {
 		padding-left: 170px;
 	}
-	
+
 	#product-desc ul, #key-desc {
 		padding-left: 190px;
 		margin-bottom: 0;		
 	}
-	
+
 	#product-side, #key-side {
 		margin-left: 65%;
 	}
-	
+
 	#product-side ul, #key-side ul {
 		margin-left: 0;
 		padding-bottom: 0;
 		padding-left: 20px;
 	}
-	
+
 	#product-side li, #key-side {
 		padding-bottom: 0.2em;
 	}
-	
+
 	#product-desc, #key-desc {
 		padding: 40px 0 25px 0;
 		color: #4C5C5C;
@@ -306,15 +306,15 @@ ol.faq li a:hover {
 		float: left;
 		line-height: 140%;
 	}
-	
+
 	#key-desc {
 		padding: 0;
 	}
-	
+
 	#key-side {
 		color: #4C5C5C;
 	}
-	
+
 	.product-firefox {
 		background: url("http://moztw.org/images/product-firefox-screen.png") no-repeat;
 	}
@@ -327,7 +327,7 @@ ol.faq li a:hover {
 	.product-mozilla {
 		background: url("http://moztw.org/images/product-mozilla-screen.png") no-repeat;
 	}
-	
+
 	#product-side .download h3 {
 		color: #1D9101;
 		font-weight: bold;
@@ -340,11 +340,11 @@ ol.faq li a:hover {
 	.download h3 :link:active, .download h3 :visited:active {
 		color: #1D9101;
 	}
-	
+
 	.download h3 :link:hover, .download h3 :visited:hover {
 		color: #156B01;
 	}
-	
+
 	.download li {
 		padding: 0;
 		margin: 0;
@@ -384,7 +384,7 @@ ol.faq li a:hover {
 		display: block;
 		font-size: 85%;
 	}
-	
+
 .shop:before, .shopmoz:before {
 		line-height: 0.1;
 		font-size: 1px;

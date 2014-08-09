@@ -38,7 +38,7 @@
 		background: transparent url("http://moztw.org/images/header_logo.gif") no-repeat;
 		text-indent: -700em;
 		text-decoration: none;
-	} 
+	}
 	#header ul {
 		width: auto;
 		position: absolute;
@@ -232,17 +232,17 @@
 		padding: 1em 0;
 		text-align: center;
 	}
-	
+
 	#footer ul {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 	}
-	
+
 	#footer li {
 		display: inline;
 	}
-	
+
 	#footer a {
 		white-space: nowrap;
 	}
@@ -250,7 +250,7 @@
 	#footer p,#footer p a {
 		color: #666;
 	}
-	
+
 	#footer p a:hover {
 		color: #000;
 	}
