@@ -4,6 +4,12 @@ pre, code {
   white-space: pre;
 }
 
+/* Make images in blog posts not overflow */
+div.content img {
+  width: 73%;
+  height: 73%
+}
+
 acronym {
     cursor: pointer;
 }
