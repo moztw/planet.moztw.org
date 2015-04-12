@@ -6,22 +6,6 @@ h2 a:hover { color: #039; }
 #mBody h2 { margin-top: 0; }
 #mBody p { margin-top: 0; }
 
-#front-feature div {
-  padding: 15px 15px 25px 15px;
-  text-align: center; 
-}
-
-a#shopLink {
-	display: block;
-	padding: 6px 4px 18px 50px;
-	width: 260px;
-	background: url(http://moztw.org/images/firefox-shop.gif) no-repeat;
-}
-
-div.extrainfo {
-	margin-top: 10px;
-}
-
 .homepage p {
 	margin: 0 0 0.6em 0;
 	line-height: 140%;
@@ -36,23 +20,8 @@ div.extrainfo {
 	color: #4C5C5C;
 }
 
-.download {
-	line-height: 140%;
- }
-
 #feature-content h2 {
 	margin: 0;
-}
-
-#featurelink {
-	display: block;
-	width: 350px;
-	height: 235px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	text-decoration: none;
-	text-indent: -2500px;
 }
 
 ul.news {
@@ -61,10 +30,10 @@ ul.news {
 }
 
 .news li {
-	margin: 0 0 0.7em 0;
-	padding: 0;
-	clear: both;
-	list-style-type: none;
+  margin: 0 0 0.7em 0;
+  padding: 0;
+  clear: both;
+  list-style-type: none;
 }
 .news li a { font-weight: normal; }
 
@@ -83,40 +52,4 @@ ul.news {
 
 .news .date:first-line {
 	font-size: 70%;
-}
-
-img.rss {
-	float: right;
-	margin: 0;
-	padding: 4px 2px 0 0;
-}
-
-img.promo {
-	margin: 0 0 8px 8px;
-	float: right;
-}
-
-.frontcolumn {
-	width: 30%;
-	float: left;
-	padding-right: 3%;
-}
-
-.frontcolumndouble {
-	width: 63%;
-	float: left;
-	padding-right: 3%;
-}
-
-.frontcolumnlast {
-	width: 33%;
-	float: left;
-}
-
-.homepage .download {
-	width: 250px;
-}
-
-.homepage .shop {
-	width: 175px;
 }

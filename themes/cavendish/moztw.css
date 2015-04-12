@@ -1,51 +1,11 @@
 /* Mozilla Taiwan special overriding */
 pre, code {
 	font-family: "Lucida Console", "MingLi", "MingLiu", "Courier New", Courier, monospace;
+  white-space: pre;
 }
 
 acronym {
     cursor: pointer;
-}
-
-.dlall div {
-	float: left;
-	margin: 5px;
-	display: block;
-	border: 1px solid #aaa;
-	padding: 7px;
-}
-.dlall br {
-	clear: both;
-}
-
-.download a:hover {
-	background: #dfb;
-	color: #240;
-}
-
-.download a {
-	text-decoration: none;
-	padding: 1px;
-	margin: 0px;
-}
-.download li {
-	padding: 1px;
-	margin: 1px;
-	height: auto;
-}
-
-.download a.preselected {
-	background: #efd;
-	font-weight: bold;
-	border-right: 1px solid #aaa;
-	border-bottom: 1px solid #aaa;
-}
-.download a.preselected:hover {
-	background: #dfe;
-	color: red;
-	border: 0px;
-	border-left: 1px solid #aaa;
-	border-top: 1px solid #aaa;
 }
 
 a:hover {
@@ -55,13 +15,10 @@ a:hover {
 a:visited {
 	color: navy;
 }
-div#firefox-feature div.download{
-	width: 17em;
-}
 
 /* new logo */
 #header h1 a {
-		background: transparent url("http://moztw.org/images/header_logo2.png") no-repeat;
+		background: transparent url("http://moztw.org/images/header_logo3.png") no-repeat;
 		width: 354px;
 		height: 65px;
 }
@@ -80,70 +37,8 @@ div#firefox-feature div.download{
   float: left;
 }
 
-#header form #cjk {
-	font-size: 90%;
-	border:	1px solid #9097A2;
-	background: #D9DBE1;
-	padding: 2px;
-	font-family: georgia,sans-serif;
-}
-
-.courier {
-	/* this is for showing 'moztw.org' in header. */
-	font-family: courier, mono;
-}
-
-
-/* fix up */
-.download strong {
-	color: #290;
-}
-a#featurelink { background: none;  }
-#firefox-feature li a {
-	padding: 1px 0 1px 5px;
-	margin-left: 40px;
-}
-
 #header form #q {
 	width: 130px;
-}
-
-#front-feature .download ul {
-	padding-left: 80px;
-}
-
-.firefox-releasenotes {
-    background: url("http://moztw.org/images/releasenotes-firefox.png") no-repeat;
-    padding-top: 70px !important;
-    width: 100% !important;
-}
-.firefox-releasenotes-v2 {
-	background: url("http://moztw.org/images/releasenotes-firefox-2.png") no-repeat;
-	padding-top: 70px !important;
-    width: 100% !important;
-}
-.firefox-releasenotes-v3 {
-	background: url("http://moztw.org/images/releasenotes-firefox-3.gif") no-repeat;
-	padding-top: 70px !important;
-    width: 100% !important;
-}
-
-.firefox-releasenotes-beta {
-    background: url("http://moztw.org/images/releasenotes-firefox-beta.png") no-repeat;
-    padding-top: 70px !important;
-    width: 100% !important;
-}
-
-.thunderbird-releasenotes {
-    background: url("http://moztw.org/images/releasenotes-thunderbird.png") no-repeat;
-    padding-top: 70px !important;
-    width: 100% !important;
-}
-
-.thunderbird-releasenotes-v2 {
-    background: url("http://moztw.org/images/releasenotes-thunderbird-2.png") no-repeat;
-    padding-top: 70px !important;
-    width: 100% !important;
 }
 
 .important101text {
@@ -153,39 +48,6 @@ a#featurelink { background: none;  }
 .news .date {
 	width: 6em;
 }
-
-body.sectionDocs li#menu_docs a,
-body.sectionForum li#menu_forum a,
-body.sectionWiki li#menu_wiki a,
-body.sectionLinks li#menu_links a {
-    background-position: 0% -200px;
-    color: #039;
-}
-
-body.sectionDocs li#menu_docs,
-body.sectionForum li#menu_forum ,
-body.sectionWiki li#menu_wiki,
-body.sectionLinks li#menu_links {
-    background-position: 100% -200px;
-    border-bottom: 1px solid #fff;
-}
-
-body.sectionDocs li#menu_docs:hover,
-body.sectionForum li#menu_forum :hover,
-body.sectionWiki li#menu_wiki:hover,
-body.sectionLinks li#menu_links:hover {
-    background-position: 100% 0%;
-}
-
-body.sectionDocs li#menu_docs:hover a,
-
-body.sectionForum li#menu_forum :hover a,
-body.sectionWiki li#menu_wiki:hover a,
-body.sectionLinks li#menu_links:hover a{
-    background-position: 0% 0%;
-    color: #333;
-}
-
 
 /* 中文的強調樣式 */
 em {
@@ -219,66 +81,6 @@ address {
 	font-style: normal;
 }
 
-/* MozTW 額外在地化軟體 */
-
-.product-netscape {
-	background: url("http://moztw.org/images/product-netscape-screen.png") no-repeat;
-}
-
-.product-nvu {
-	background: url("http://moztw.org/images/product-nvu-screen.jpg") no-repeat;
-}
-
-.product-camino {
-	background: url("http://moztw.org/images/product-camino-screen.png") no-repeat;
-}
-
-/* 與 Mozilla.org 路徑不同 */
-#ffcentral-desc {
-	background: url("../../firefox/central/t-welcomefirefox.gif") no-repeat;
-}
-
-/* 保持 mozilla.org 原先未分出 .com 時的樣式 */
-
-.front-feature-cwb { background: #E4EcEc url(../../images/feature-back-cwb-fx3.png) bottom right no-repeat;}
-
-#front-feature div {
-	text-align: left !important;
-}
-
-#front-feature #feature-content {
-	padding: 6px 380px 6px 10px;
-}
-
-.download{
-	padding: 15px 45px 15px 15px !important;
-}
-
-.download div{
-	padding: 0 !important;
-}
-
-/* 加入 mozilla.com 樣式 */
-.corner-box {
-	background: url(/images/left-top-corner-box.jpg) top left no-repeat;
-	padding: 12px 15px;
-}
-
-.corner-box h3 {
-	margin-top: 0;
-}
-
-.features .corner-box h3 {
-	display: block;
-	background: url(/images/checkmark.png) top left no-repeat;
-	padding: 2px 0 6px 32px;
-	text-decoration: none;
-}
-
-.features .corner-box p{
-	padding-left: 32px;
-}
-
 /* microformat */
 
 div.vcard {
@@ -297,11 +99,10 @@ div.vcard p.fn{
 }
 div.vcard p {font-weight: bold;}
 div.vcard a {font-weight: normal;}
-
 .vcard-additional-info{display: none;}
 .vcard .note:before {content: "" !important;}
 
-/* 摩茲工寮 */
+/* 摩茲星球 */
 
 #planet-moztw-org .key-point {
 	background: #E4ECEC url(images/feature.png) no-repeat scroll right bottom;
