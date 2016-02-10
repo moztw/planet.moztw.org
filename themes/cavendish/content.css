@@ -134,15 +134,15 @@
 	.key-point:before {
 		line-height: 0.1;
 		font-size: 1px;
-		background: transparent url("http://moztw.org/images/key-point_tr.gif") no-repeat top right;
+		background: transparent url("https://moztw.org/images/key-point_tr.gif") no-repeat top right;
 		margin: -15px -15px 0 -15px;
 		height: 15px;
 		display: block;
 		border: none;
-		content: url("http://moztw.org/images/key-point_tl.gif");
+		content: url("https://moztw.org/images/key-point_tl.gif");
 	}
 	.key-point {
-		background: #e4ecec url("http://moztw.org/images/key-point_back.gif") right repeat-y;
+		background: #e4ecec url("https://moztw.org/images/key-point_back.gif") right repeat-y;
 		padding: 15px;
 		margin-bottom: 1em;
 	}
@@ -152,10 +152,10 @@
 		padding-top: 15px;
 		line-height: 0.1;
 		font-size: 1px;
-		content:  url("http://moztw.org/images/key-point_bl.gif");
+		content:  url("https://moztw.org/images/key-point_bl.gif");
 		margin: -15px;
 		height: 8px;
-		background: transparent url("http://moztw.org/images/key-point_br.gif") scroll no-repeat bottom right ;
+		background: transparent url("https://moztw.org/images/key-point_br.gif") scroll no-repeat bottom right ;
 	}
 
 	.key-point h2, .key-point h3, .key-point h4, .key-point h5 {
@@ -316,16 +316,16 @@ ol.faq li a:hover {
 	}
 
 	.product-firefox {
-		background: url("http://moztw.org/images/product-firefox-screen.png") no-repeat;
+		background: url("https://moztw.org/images/product-firefox-screen.png") no-repeat;
 	}
 	.product-thunderbird {
-		background: url("http://moztw.org/images/product-thunderbird-screen.png") no-repeat;
+		background: url("https://moztw.org/images/product-thunderbird-screen.png") no-repeat;
 	}
 	.product-camino {
-		background: url("http://moztw.org/images/product-camino-screen.png") no-repeat;
+		background: url("https://moztw.org/images/product-camino-screen.png") no-repeat;
 	}
 	.product-mozilla {
-		background: url("http://moztw.org/images/product-mozilla-screen.png") no-repeat;
+		background: url("https://moztw.org/images/product-mozilla-screen.png") no-repeat;
 	}
 
 	#product-side .download h3 {
@@ -363,10 +363,10 @@ ol.faq li a:hover {
 		height: 15px;
 		display: block;
 		border: none;
-		content: url("http://moztw.org/images/download_tl.gif");
+		content: url("https://moztw.org/images/download_tl.gif");
 	}
 	.download {
-		background: #C4EFA1 url("http://moztw.org/images/download_back.gif") top right no-repeat;
+		background: #C4EFA1 url("https://moztw.org/images/download_back.gif") top right no-repeat;
 		padding: 15px 45px 15px 15px;
 		margin-bottom: 0.5em;
 	}
@@ -375,10 +375,10 @@ ol.faq li a:hover {
 		padding-top: 15px;
 		line-height: 0.1;
 		font-size: 1px;
-		content:  url("http://moztw.org/images/download_bl.gif");
+		content:  url("https://moztw.org/images/download_bl.gif");
 		margin: -10px -45px -15px -15px;
 		height: 8px;
-		background: transparent url("http://moztw.org/images/download_br.gif") scroll no-repeat bottom right ;
+		background: transparent url("https://moztw.org/images/download_br.gif") scroll no-repeat bottom right ;
 	}
 	.configParent {
 		display: block;
@@ -392,14 +392,14 @@ ol.faq li a:hover {
 		height: 15px;
 		display: block;
 		border: none;
-		content: url("http://moztw.org/images/shop_tl.gif");
+		content: url("https://moztw.org/images/shop_tl.gif");
 	}
 	.shop {
-		background: #C0DCDC url("http://moztw.org/images/shop_back.gif") top right no-repeat;
+		background: #C0DCDC url("https://moztw.org/images/shop_back.gif") top right no-repeat;
 		padding: 15px 70px 15px 15px;
 	}
 	.shopmoz {
-		background: #C0DCDC url("http://moztw.org/images/shopmoz_back.gif") top right no-repeat;
+		background: #C0DCDC url("https://moztw.org/images/shopmoz_back.gif") top right no-repeat;
 		padding: 15px 70px 15px 15px;
 	}
 	.shop:after, .shopmoz:after {
@@ -407,15 +407,15 @@ ol.faq li a:hover {
 		padding-top: 15px;
 		line-height: 0.1;
 		font-size: 1px;
-		content: url("http://moztw.org/images/shop_bl.gif");
+		content: url("https://moztw.org/images/shop_bl.gif");
 		margin: -10px -70px -15px -15px;
 		height: 8px;
-		background: transparent url("http://moztw.org/images/shop_br.gif") scroll no-repeat bottom right ;
+		background: transparent url("https://moztw.org/images/shop_br.gif") scroll no-repeat bottom right ;
 	}
 
 /* Firefox Central styles  */
         #ffcentral-desc {
-                background: url("http://moztw.org/products/firefox/t-welcomefirefox.gif") no-repeat;
+                background: url("https://moztw.org/products/firefox/t-welcomefirefox.gif") no-repeat;
                 width: 60%;
                 float: left;
                 line-height: 140%;
