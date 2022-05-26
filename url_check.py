@@ -87,13 +87,13 @@ async def try_request(url: str) -> Tuple[SiteStatus, str | None]:
                     else:
                         # 反之，認定為普通的存取。
                         return (SiteStatus.Normal, None)
+                else:
+                    logger.error(f"無法存取 {url}，因為網站回傳了錯誤代碼 {resp.status}。")
 
         except aiohttp.ClientResponseError as cre:
-            logger.error(f"無法連線至 {cre.request_info.url}，錯誤代碼是 {cre.code}。")
+            logger.error(f"無法連線至 {cre.request_info.url}，錯誤訊息是 {cre.message}。")
 
-            # 連不上就當壞掉的。
-            return (SiteStatus.Unavailable, None)
-
+    # 沒有 early return 都是壞的。
     return (SiteStatus.Unavailable, None)
 
 def interpret_result(url: str, response: Tuple[SiteStatus, str | None]) -> str | None:
