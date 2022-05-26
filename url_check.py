@@ -1,4 +1,4 @@
-'''
+"""
 檢查 ``moztw/config.ini`` 訂閱的 URL 是否已經 301 或失效。
 
 使用方法
@@ -21,7 +21,7 @@
 本程式使用 ``ConfigParser`` 分析 ``config.ini``。
 
 某些網站（如 Medium）會擋爬蟲。因此遇到 404 連結，請二次檢查而非盲目刪除。
-'''
+"""
 
 import asyncio
 import configparser
@@ -30,34 +30,40 @@ from typing import Any, Iterable, Tuple, TypedDict, cast
 import aiohttp
 from loguru import logger
 
+
 class SiteStatus(Enum):
-    '''網站的狀態是正常運作、301 轉址，還是已經無法存取？'''
+    """網站的狀態是正常運作、301 轉址，還是已經無法存取？"""
+
     Normal = 200
     Moved = 301
     Unavailable = 404
 
+
 class SubscribedUrl(TypedDict):
-    '''一個網址的結構''' 
+    """一個網址的結構"""
+
     name: str  # ex. MozTW YouTube 頻道
     description: str  # ex. Mozilla 與 MozTW 社群影片
     blogname: str  # ex. MozTW YouTube
     icon: str  # ex. default
     truelink: str  # ex. https://www.youtube.com/moztw
 
-def extract_urls_from_config(config: dict[str, Any]) -> dict[str, SubscribedUrl]:
-    '''只留下來 key 是 ``http`` 開頭的資料（我們只打算處理網址）。
 
-    留下來的網址全部假定為 ``SubscribedUrl`` 類型。'''
+def extract_urls_from_config(config: dict[str, Any]) -> dict[str, SubscribedUrl]:
+    """只留下來 key 是 ``http`` 開頭的資料（我們只打算處理網址）。
+
+    留下來的網址全部假定為 ``SubscribedUrl`` 類型。"""
     return cast(
         dict[str, SubscribedUrl],
-        { k: v for k, v in config.items() if k.startswith('http') }
+        {k: v for k, v in config.items() if k.startswith("http")},
     )
 
+
 async def try_request(url: str) -> Tuple[SiteStatus, str | None]:
-    '''嘗試請求 url 並回傳網站的狀態。
-    
+    """嘗試請求 url 並回傳網站的狀態。
+
     如果 ``SiteStatus`` 是 ``Moved``，
-    則會在回傳的 Tuple 的第二項回傳轉址後的網址。'''
+    則會在回傳的 Tuple 的第二項回傳轉址後的網址。"""
 
     logger.debug(f"嘗試請求 {url}⋯⋯")
 
@@ -84,13 +90,14 @@ async def try_request(url: str) -> Tuple[SiteStatus, str | None]:
     # 沒有 early return 都是壞的。
     return (SiteStatus.Unavailable, None)
 
+
 def interpret_result(url: str, response: Tuple[SiteStatus, str | None]) -> str | None:
-    '''判讀結果，並將結果回傳為一個人類可讀的字串。
-    
+    """判讀結果，並將結果回傳為一個人類可讀的字串。
+
     參數
     ---
     :param url 請求的連結
-    :param response ``try_request()` 回傳的結果'''
+    :param response ``try_request()` 回傳的結果"""
 
     status, redirect_url = response
 
@@ -105,25 +112,37 @@ def interpret_result(url: str, response: Tuple[SiteStatus, str | None]) -> str |
             # 告知使用者本服務已經失效。
             return f"| 404 失效 | {url} | |"
 
+
 async def main():
     config = configparser.ConfigParser()
     config.read("./moztw/config.ini")
 
     http_urls = extract_urls_from_config(dict(config))
-    
+
     async def request_action(url: str) -> str | None:
-        '''for gathering'''
+        """for gathering"""
 
         resp = await try_request(url)
         return interpret_result(url, resp)
 
     # 進行並行請求，及格式化為人類可讀的文字。
     raw_response = await asyncio.gather(
-        *(asyncio.gather(request_action(key), request_action(value["truelink"])) for (key, value) in http_urls.items())
+        *(
+            asyncio.gather(request_action(key), request_action(value["truelink"]))
+            for (key, value) in http_urls.items()
+        )
     )
 
     # 進行資料展平及去 None。
-    response = list(cast(Iterable[str], filter(lambda x: x != None, [entry for entries in raw_response for entry in entries])))
+    response = list(
+        cast(
+            Iterable[str],
+            filter(
+                lambda x: x != None,
+                [entry for entries in raw_response for entry in entries],
+            ),
+        )
+    )
     # 排序回應
     response.sort()
 
@@ -132,5 +151,6 @@ async def main():
     response.insert(1, "| --- | --- | ------ |")
 
     print("\n".join(response))
+
 
 asyncio.run(main())
