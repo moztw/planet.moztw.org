@@ -27,7 +27,6 @@ import asyncio
 import configparser
 from enum import Enum
 from typing import Any, Iterable, Tuple, TypedDict, cast
-import aiofiles
 import aiohttp
 from loguru import logger
 
@@ -44,17 +43,6 @@ class SubscribedUrl(TypedDict):
     blogname: str  # ex. MozTW YouTube
     icon: str  # ex. default
     truelink: str  # ex. https://www.youtube.com/moztw
-
-async def read_config_as_string() -> str:
-    '''讀入 config.ini 並回傳其內容。'''
-    config_raw: str | None = None
-
-    logger.info("開始讀取 config.ini⋯⋯")
-    async with aiofiles.open('moztw/config.ini', 'r', encoding='utf-8') as f:
-        config_raw = await f.read()
-
-    assert config_raw != None and len(config_raw) > 0, "config_raw 應有資料。"
-    return config_raw
 
 def extract_urls_from_config(config: dict[str, Any]) -> dict[str, SubscribedUrl]:
     '''只留下來 key 是 ``http`` 開頭的資料（我們只打算處理網址）。
