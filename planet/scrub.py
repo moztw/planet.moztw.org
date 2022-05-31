@@ -130,3 +130,7 @@ def scrub(feed_uri, data):
 
             node['value'] = feedparser._sanitizeHTML(
                 node.value, 'utf-8', node.type)
+
+    for entry in data.entries:
+        if entry.has_key('updated') and entry.has_key('published'):
+            entry.updated = entry.published
