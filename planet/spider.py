@@ -175,7 +175,7 @@ def writeCache(feed_uri, feed_info, data):
         # determine updated date for purposes of selection
         updated = ''
         if entry.has_key('published'): updated=entry.published
-        if entry.has_key('updated'):   updated=entry.updated
+        #if entry.has_key('updated'):   updated=entry.updated
 
         # if not seen or newer than last seen, select it
         if updated >= ids.get(entry.id,('',))[0]:
