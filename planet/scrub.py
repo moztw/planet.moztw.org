@@ -131,6 +131,9 @@ def scrub(feed_uri, data):
             node['value'] = feedparser._sanitizeHTML(
                 node.value, 'utf-8', node.type)
 
+    # rm update time info to fix youtube random showing up in news
     for entry in data.entries:
-        if entry.has_key('updated') and entry.has_key('published'):
-            entry.updated = entry.published
+        if entry.has_key('updated'):
+            del entry['updated']
+        if entry.has_key('updated_parsed'):
+            del entry['updated_parsed']
